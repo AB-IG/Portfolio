@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── CSS custom properties ───────────────────── */
+:root {
+  --bg:             #0F0F0D;
+  --bg-subtle:      #1A1A17;
+  --bg-elevated:    #242420;
+  --text-primary:   #F0EDE6;
+  --text-secondary: #A09D96;
+  --text-muted:     #5C5A55;
+  --border:         #2A2A26;
+  --accent:         #F0EDE6;
+}
+
+/* ── Base reset ──────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body, #root {
+  background-color: var(--bg);
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: auto; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: none;
+  overflow-x: hidden;
+}
+
+@media (max-width: 767px) {
+  body { cursor: auto; }
+}
+
+/* ── Typography helpers ──────────────────────── */
+.section-label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 1.25rem;
+}
+
+.section-heading {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  margin-bottom: 3.5rem;
+}
+
+.prose-block {
+  font-size: 1.05rem;
+  line-height: 1.88;
+  color: var(--text-secondary);
+  max-width: 660px;
+}
+
+.prose-block strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* ── Section spacing ─────────────────────────── */
+.section-pad {
+  padding: clamp(64px, 12vh, 128px) 0;
+}
+
+@media (max-width: 767px) {
+  .section-heading { margin-bottom: 2.5rem; }
+}
+
+/* ── Scroll margin for sticky nav ───────────── */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* ── Container ───────────────────────────────── */
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 5vw, 80px);
+}
+
+/* ── Alt section — same bg (ozgur uses one bg) ── */
+.alt-bg {
+  background: var(--bg);
+}
+
+/* ── Section separator ───────────────────────── */
+.section-sep {
+  border-top: 1px solid var(--border);
+}
+
+/* ── Scrollbar ───────────────────────────────── */
+::-webkit-scrollbar { width: 0; }
+
+/* ── Selection ───────────────────────────────── */
+::selection {
+  background: var(--text-primary);
+  color: var(--bg);
+}
+
+/* ── Bounce animation for scroll indicator ───── */
+@keyframes bounce-y {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(7px); }
+}
+
+.bounce {
+  animation: bounce-y 2s ease-in-out infinite;
+}
+
+/* ── Prefers reduced motion ──────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .bounce { animation: none; }
+}
