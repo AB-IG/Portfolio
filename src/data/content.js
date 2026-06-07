@@ -16,7 +16,8 @@ export const meta = {
   twitter: "https://twitter.com",
   instagram: "https://instagram.com",
   // TODO: replace with real hosted PDF URL (Google Drive, Dropbox, or own domain)
-  cvUrl: "https://drive.google.com/",
+  cvUrl:
+    "https://drive.google.com/uc?export=download&id=1xA9IjEP08vNWM5gsf52AhMgc2_Q1SbmC",
 };
 
 export const navLinks = [
