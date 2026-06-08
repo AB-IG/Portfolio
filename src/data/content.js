@@ -9,13 +9,13 @@ export const meta = {
     "linkedin.com/in/abraham-markus-67514331b",
   linkedinHref:
     "https://linkedin.com/in/abraham-markus-67514331b",
-  // TODO: replace with real GitHub URL and handle
+  //  GitHub URL and handle
   github: "https://github.com",
   githubHandle: "github.com/abraham-markus",
   githubHref: "https://github.com/AB-IG",
   twitter: "https://twitter.com",
   instagram: "https://instagram.com",
-  // TODO: replace with real hosted PDF URL (Google Drive, Dropbox, or own domain)
+  // real hosted PDF URL (Google Drive, Dropbox, or own domain)
   cvUrl:
     "https://drive.google.com/uc?export=download&id=1xA9IjEP08vNWM5gsf52AhMgc2_Q1SbmC",
 };
@@ -35,7 +35,7 @@ export const projects = [
     outcome:
       "25% revenue uplift · Stripe/Paystack integration",
     techStack: ["React", "Node.js", "MongoDB"],
-    // TODO: replace # with real GitHub repo and live URL
+    //  real GitHub repo and live URL
     githubUrl: "#",
     liveUrl: "#",
   },

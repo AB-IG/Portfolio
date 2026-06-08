@@ -238,9 +238,9 @@ export default function Featured() {
                 </div>
 
                 <div className="flex flex-wrap gap-3">
-                  {/* TODO: replace # with real live URL */}
+                  {/* real live URL */}
                   <a
-                    href="https://direct-rent.lovable.app/"
+                    href="#"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="cursor-none inline-flex items-center gap-1.5 font-semibold transition-all duration-150"
@@ -265,7 +265,7 @@ export default function Featured() {
                   >
                     View Live →
                   </a>
-                  {/* TODO: replace # with real GitHub repo URL */}
+                  {/*  GitHub repo URL */}
                   <a
                     href="https://github.com/AB-IG/direct-rent"
                     target="_blank"
