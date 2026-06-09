@@ -239,8 +239,8 @@ export default function Featured() {
 
                 <div className="flex flex-wrap gap-3">
                   {/* real live URL */}
-                  <a
-                    href="#"
+                  {/* <a
+                  //  href="#"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="cursor-none inline-flex items-center gap-1.5 font-semibold transition-all duration-150"
@@ -264,9 +264,9 @@ export default function Featured() {
                     }}
                   >
                     View Live →
-                  </a>
+                  </a> */}
                   {/*  GitHub repo URL */}
-                  <a
+                  {/* <a
                     href="https://github.com/AB-IG/direct-rent"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -294,7 +294,7 @@ export default function Featured() {
                     }}
                   >
                     GitHub Repo →
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
