@@ -9,14 +9,17 @@ export default function StackingScroll({ children }) {
 
   useEffect(() => {
     const sections = containerRef.current.querySelectorAll('.stack-section')
+    const total = sections.length
 
     sections.forEach((section, i) => {
-      // Pin each section in place while next slides over it
+      const isLast = i === total - 1
+
+      // Pin each section — only last one keeps pinSpacing to push content below it down
       ScrollTrigger.create({
         trigger: section,
         start: 'top top',
         pin: true,
-        pinSpacing: false,
+        pinSpacing: isLast,
       })
 
       // Slide each section up from below over the previous one
