@@ -79,7 +79,7 @@ export default function Contact() {
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.6, delay: 0.18, ease: 'easeOut' }}
         >
-          Available for senior and lead engineering roles. Remote, hybrid, or on-site across Nigeria.
+          Available for Full-Stack roles. Remote, hybrid, or on-site across Nigeria.
           Response time is fast.
         </motion.p>
 
