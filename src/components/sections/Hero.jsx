@@ -175,7 +175,7 @@ export default function Hero() {
       className="relative min-h-screen flex flex-col justify-center section-pad"
     >
       <div className="container relative">
-        {/* Photo — top right, absolute (desktop only) */}
+        {/* Photo — top right, absolute (desktop view only) */}
         <motion.div
           initial={{ opacity: 0, scale: 0.94 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -285,7 +285,7 @@ export default function Hero() {
                 flexShrink: 0,
               }}
             />
-            Available for Senior &amp; Lead
+            Available for &amp;
             Full-Stack Roles — Remote or On-site,
             Nigeria
           </span>
